@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //그냥 새를 정의한다
+        class Bird{
+            constructor(){
+                this.wing=2;
+                this.color;
+                
+            }
+            fly(){
+                console.log("새가 날아요");
+            }
+        }
+        //오리 클래스가 예전에 작성해놓은 Bird클래스를 상속받은 것임
+        class Duck extends Bird{
+            constructor(){
+                super();//부모님의 생성자 호출
+                this.wing=4;
+                this.color="white";
+            }
+            fly(){//override = 업그레이드
+                console.log("오리가 날아요");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
